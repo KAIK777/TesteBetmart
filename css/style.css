@@ -1,9 +1,9 @@
 .user-off {
-  display: none;
+  display: block;
 }
 
 .user-on {
-  display: block;
+  display: none;
 }
 
 body {
