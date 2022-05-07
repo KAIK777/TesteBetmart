@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Betmart</title>
+</head>
+<body>
+  <header>
+    <div class="header-superior">
+      <div class="header-left">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/Logo.png" alt="" width="150" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Consultar Cartão</a>
+                    <a class="nav-link" href="#">Apostas</a>
+              </div>
+              <div class="navbar-nav">                
+                <div class="btn-group">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Idioma
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Português</a></li>    
+                    <li><a href="#">Inglês</a></li> 
+                  </ul>
+                  
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Opções
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="deposito.html">Depositar</a></li>
+                    <li><a href="saque.html">Sacar</a></li>
+                    <li><a href="bilhetes.html">Meus Bilhetes</a></li>
+                    <li><a href="caixa.html">Caixa</a></li>
+                    <li><a href="extrato.html">Extrato</a></li>
+                  </ul>
+                </div>
+                
+                <div class="user-off">
+                  <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-dark btn-login" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Entrar</button>
+                    <button class="btn btn-dark btn-cadastro"type="button" data-bs-toggle="modal" data-bs-target="#cadastroModal">Criar Conta</button>
+                  </div>
+                </div>
+
+                <div class="user-on">
+                  <div class="area-logado">
+                    <div class="perfil">
+                      <div>
+                        <img src="img/icons/profile.png" width="25px" alt="Perfil">
+                      </div>
+                      <div class="infos-perfil">
+                        <p>User999</p>
+                        <p>R$ <span>0,00</span></p>
+                      </div>
+                    </div>
+                    <a href="perfil.html">Perfil</a>
+                    <a href="#">Sair</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-meusbilhetes">
+    <div class="header-meusbilhetes container-fluid">
+        <div class="left">
+          <ul>
+            <li class="item selected">
+              <span class="title-meusbilhetes">Meus Bilhetes:</span>
+            </li>
+            <li class="item">
+              <a href="#multiCollapseAovivo" data-bs-toggle="collapse" >Ao vivo</a>
+            </li>
+            <li class="item">
+              <a href="#multiCollapsePendentes" data-bs-toggle="collapse">Pendentes</a>
+            </li>
+            <li class="item">
+              <a href="#multiCollapseResolvidos" data-bs-toggle="collapse">Resolvidos</a>
+            </li>
+            <li class="item">
+              <a href="#" data-bs-toggle="collapse" data-bs-target=".multi-collapse">Todos</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="bilhetes-aovoivo">
+      <div class="collapse multi-collapse show" id="multiCollapseAovivo">
+        <p class="title-tiposbilhetes">Bilhetes Ao vivo</p>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapseAovivo1">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapseAovivo1">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapseAovivo2">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapseAovivo2">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapseAovivo3">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapseAovivo3">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="bilhetes-pendentes">
+      <div class="collapse multi-collapse" id="multiCollapsePendentes">
+        <p class="title-tiposbilhetes">Bilhetes Pendentes</p>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapsePendente1">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapsePendente1">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapsePendente2">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapsePendente2">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapsePendente3">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapsePendente3">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="bilhetes-resolvidos">
+      <div class="collapse multi-collapse" id="multiCollapseResolvidos">
+        <p class="title-tiposbilhetes">Bilhetes Resolvidos</p>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapseResolvido1">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapseResolvido1">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapseResolvido2">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapseResolvido2">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="conteudo-bilhetes">
+          <div class="valoretipo-apostabilhete" data-bs-toggle="collapse" data-bs-target="#collapseResolvido3">
+            <span>R$ 1,00 Simples</span>
+            <span class="subtitle-valoretipo">Man Utd vs Chelsea</span>
+          </div>
+          
+          <div class="collapse" id="collapseResolvido3">
+            <div class="titulo-aposta">
+              <div>
+                <span>Criar Aposta Personalizada</span>
+                <span class="titulo-aposta odd">15.00</span>
+              </div>
+              <span>Man Utd vs Chelsea</span>
+            </div>
+  
+            <div class="condicoes-aposta">
+              <div class="item-condicoes">
+                <span class="title-condicoes">Partida - Para Cristiano Ronaldo Marcar Primeiro</span>
+                <br>
+                <span class="subtitle-condicoes">Primeiro Marcador</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Scott McTominay Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">Para Marcos Alonso Ser Advertido</span>
+                <br>
+                <span class="subtitle-condicoes">O Jogador receberá um Cartão</span>
+              </div>
+  
+              <div class="item-condicoes">
+                <span class="title-condicoes">1º Tempo - Resultado - Chelsea</span>
+                <br>
+                <span class="subtitle-condicoes">Intervalo</span>
+              </div>
+            </div>
+            
+            <div class="resultado-bilhete">
+              <div>
+                <span>Aposta</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 3,00</span>
+              </div>
+              <div>
+                <span>Retornos</span>
+                <br>
+                <span class="valor-footerbilhete">R$ 27,00</span>
+              </div>
+              <div>
+                <a href="#" class="encerraraposta-bilhete">
+                  Encerrar Aposta
+                  <span class="valor-encerraraposta">R$ 0,50</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer-left">
+      <div class="logo-footer">
+        <img src="img/Logo.png" alt="Betmart" width="150px">
+      </div>
+      <div class="infos-footer">
+        <span>
+          Apostar pode provocar dependência, por favor jogue responsavelmente. Para informação sobre formas de apoio, por favor acesse a nossa página de Ajuda de Jogo Responsável.
+        </span>
+        <br><br>
+        <span>
+          Hillside (Sports) ENC, número de registro P1811, Office 1/2373, Level G, Quantum House, 75 Abate Rigord Street, Ta’ Xbiex XBX 1120, Malta. Hillside (Sports) ENC é licenciada e regulada pela Malta Gaming Authority (MGA), Licença número 
+        </span>
+        <br><br>
+        <span>
+          © 2022 Betmart. Todos os direitos reservados.
+        </span>
+        <br><br>
+        <span class="horario-footer">
+          Hora do Servidor 04:56:26 GMT-3.
+        </span>
+        <br><br>
+        <span>
+          Ao acessar, continuar a utilizar ou ao navegar neste site, você aceita que utilizemos certos cookies de navegador com o objetivo de melhorar a sua experiência como usuário. A bet365 apenas utiliza cookies que melhoram a sua experiência e não interferem em sua privacidade. Por favor, consulte a nossa Política de Cookies.
+        </span>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <ul class="imagens-footer">
+        <li>
+          <a href="#">
+            <img src="img/footer/GT_v2.svg" alt="Therapy for Gambling Addiction">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/footer/InternationalBettingIntegrity.svg" alt="International Betting Integrity">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/footer/MGA.svg" alt="Malta Gaming Autority">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/footer/eCogra.svg" alt="eCommerce and Online Gaming Regulation and Assurance">
+          </a>
+        </li>
+        <li>
+            <img src="img/footer/18.svg" alt="Apenas para maiores de 18 anos">
+        </li>
+      </ul>
+
+      <ul class="links-footer">
+        <li>
+          <a href="#">Cassino</a>
+        </li>
+
+        <li>
+          <a href="#">Cassino Ao-vivo</a>
+        </li>
+
+        <li>
+          <a href="#">Jogos</a>
+        </li>
+
+        <li>
+          <a href="#">Pôquer</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

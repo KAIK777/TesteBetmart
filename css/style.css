@@ -1,9 +1,9 @@
 .user-off {
-  display: block;
+  display: none;
 }
 
 .user-on {
-  display: none;
+  display: block;
 }
 
 body {
@@ -1332,6 +1332,169 @@ footer {
   margin-bottom: 10px;
   border-radius: 0px !important;
 }
+
+.main-meusbilhetes {
+  min-height: 600px;
+}
+
+.main-meusbilhetes .header-meusbilhetes {
+  display: flex;
+  background-color: #1a242d;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.main-meusbilhetes .header-meusbilhetes .left {
+  display: flex;
+  align-items: center;
+}
+
+.main-meusbilhetes .header-meusbilhetes ul {
+  display: flex;
+}
+
+.main-meusbilhetes .header-meusbilhetes ul li {
+  margin-right: 10px !important;
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 10px !important;
+}
+
+.main-meusbilhetes .header-meusbilhetes ul li a {
+  position: relative;
+  top: 6px;
+  color: #FFF;
+  display: block;
+  padding: 7px 5px !important;
+}
+
+.header-meusbilhetes ul .item.selected {
+  border-bottom: 3px solid #f12c4c;
+}
+
+.title-meusbilhetes {
+  font-size: 14px;
+  color: #FFF;
+  background-color: #131521;
+  border-radius: 5px;
+  padding: 7px 5px !important;
+  position: relative;
+  top: 10px;
+}
+
+.title-tiposbilhetes {
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFF;
+  padding: 10px 0px !important;
+  margin-left: 13px !important;
+}
+
+.conteudo-bilhetes {
+  margin: 10px;
+  border: 1px solid #323b45;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 12px;
+  background-color: #131521;
+}
+
+.valoretipo-apostabilhete {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #323b45;
+  cursor: pointer;
+}
+
+.subtitle-valoretipo {
+  font-size: 11px;
+  font-weight: normal;
+  margin-left: 1%;
+}
+
+.titulo-aposta {
+  padding: 10px;
+}
+
+.titulo-aposta div {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.titulo-aposta.odd {
+  margin-left: 15%;
+}
+
+.condicoes-aposta {
+  padding: 10px;
+  border-bottom: 1px solid #323b45;
+}
+
+.item-condicoes {
+  margin-bottom: 2%;
+}
+
+.subtitle-condicoes {
+  font-size: 11px;
+}
+
+.resultado-bilhete {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.resultado-bilhete div {
+  width: 50%;
+}
+
+.valor-footerbilhete {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.encerraraposta-bilhete {
+  color: #FFF;
+  background-color: #f12c4c;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px 50px !important;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+}
+
+.valor-encerraraposta {
+  font-size: 14px;
+}
+
+@media (max-width: 830px) {
+  .encerraraposta-bilhete {
+    padding: 10px 20px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .header-meusbilhetes::after {
+    content: '→';
+    color: #f12c4c;
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    animation: seta .5s ease-in 0s infinite alternate;
+  }
+  .header-meusbilhetes {
+    position: relative;
+    padding: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+
+
 
 @media (max-width: 1440px) {
   .right-principal {
